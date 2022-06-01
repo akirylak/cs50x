@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    AKirylak CS50 final project: Request
+{% endblock %}
+
+{% block main %}
+
+<h1>Join my Network List!</h1>
+<h4>Complete the Form below to be a part of my Network!</h4>
+<BR>
+    <form action="/form" method="post">
+        <div class="form-group">
+        <input type="text" id="firstname" name="firstname" autocomplete="off" autofocus class="form-control" placeholder="First Name">
+        </div>
+        <BR>
+        <div class="form-group">
+        <input type="text" id="lastname" name="lastname"  autocomplete="off" autofocus class="form-control" placeholder="Last Name">
+        </div>
+        <BR>
+        <div class="form-group">
+        <input type="text" id="email" name="email"  autocomplete="off" autofocus class="form-control" placeholder="Email Address">
+        </div>
+        <BR>
+        <div class="form-group">
+        <label>Optional:</label>
+        <input type="text" id="linkedin" name="linkedin"  autocomplete="off" autofocus class="form-control" placeholder="Linkedin URL">
+        </div>
+        <BR>
+        <button class="button" type="submit">Connect!</button>
+    </form>
+{% endblock %}

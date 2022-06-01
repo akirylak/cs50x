@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    AKirylak CS50 final project
+{% endblock %}
+
+{% block main %}
+<script>
+    function sayhello()
+    {
+        let name = document.querySelector('#name').value;
+        alert('Welcome to my Page ' + name + '!  My website is currently a work in progress.  Hopefully it will grow into something awesome soon!')
+    }
+</script>
+
+<h1>Hello _________,</h1>
+<h4>How rude of me!, Tell me what is your name?</h4>
+<BR>
+    <form onsubmit="sayhello(); return false;">
+        <input id="name" type="text" autocomplete="off" placeholder="Tell me your name">
+        <input type="submit">
+    </form>
+<BR>
+<p>
+Welcome to my Porfolio Page where I demonstrate my skills that I have learned using HTML, CSS, Javascript C, C++/Python, and Flask for CS50.
+This site is for demostration purposes only as I show you what I have learned and what I have failed at numerous times</p>
+<p>
+I started CS50 during the beginning of the Pandemic as a way to get out of my comfort zone and try something new.  I am highly interested in learned Cyber Security, however I have very little understanding how programming works.
+This course not only helped me understand the logic of how an application is created, it also allowed me to apply the skills I learned in my day to day activity with my current job.
+</p>
+<p>Feel free to browse around the site and see what I was able to accomplish with time, trial and error, screaming at the IDE for crashing and a cup of coffee every now and then.
+</p>
+<p><b>Enjoy &#9749</b>&nbsp &nbsp &lt--- Psst!  Unicode!
+</p>
+<BR><BR>
+<p><font color="FF0000">Example code I learned on this page:
+</font><BR>
+<xmp><p><b>Enjoy &#9749</b>&nbsp &nbsp &lt--- Psst!  Unicode!
+</p></xmp></p>
+{% endblock %}
